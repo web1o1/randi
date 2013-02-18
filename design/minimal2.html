@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>An Honest Liar</title>
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Ultra&subset=latin" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <style>
@@ -26,16 +26,23 @@
         background: #fff;
     }
 
+    html {
+        background: url(thunder-right.svg) no-repeat top right;
+    }
+
     body {
         margin: 0;
         padding: 0;
         font: 14px/1.5 'Georgia';
         color: #222;
+        background: url(thunder.svg) no-repeat;
     }
 
     header {
-        padding-top: 60px !important;
-        padding-bottom: 100px !important;
+        padding-top: 140px !important;
+        padding-bottom: 80px !important;
+        background: url(Joker-card.png) no-repeat center -120px;
+
     }
     header img {
         display: block;
@@ -49,27 +56,31 @@
     }
 
     h1 {
-        font:  35px/.9 'Fjalla One';
+        font:  35px/.9 'Ultra';
         letter-spacing: 1px;
         margin: 0 0 10px;
         text-align: center;
+        text-transform: uppercase;
     }
 
     h2 {
-        font: 16px/1 'Fjalla One';
+        font: 16px/1 'Ultra';
+        text-transform: uppercase;
         margin: 0;
         text-align: center;
+        letter-spacing: 1px;
+        color: #999;
     }
     h2 span {
         color: #4c8694;
     }
 
     h3 {
-        font: 28px/1 'Source Sans Pro';
-        color: #fff;
-        margin: 0 0 10px;
+        font: 20px/1 'Ultra';
+        margin: 50px 0;
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
+        text-align: center;
     }
 
     p {
@@ -100,26 +111,27 @@
     nav ul {
         margin: 0;
         padding: 0;
-        display: table-row;
     }
 
     nav ul li {
-        display: table-cell;
+        display: inline-block;
         border-left: 1px solid #eee;
+        font-size: 0;
     }
     nav ul li:first-child {
         border-left: none;
     }
     nav a {
         color: #222;
-        padding: 5px 10px;
+        padding: 0 9px 0 10px;
         text-align: center;
-        font-size: 12px;
+        font-size: 14px;
+        line-height: 1.3;
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         font-family: 'Source Sans Pro';
         display: block;
-        font-weight: 600;
+        color: #999;
     }
 
 
@@ -142,29 +154,35 @@
     }
 
     footer ul {
-        display: table;
-        width: 100%;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
     }
     footer ul li {
-        display: table-cell;
-        text-align: left;
-        padding-left: 40px;
-        padding-right: 40px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 18px;
+        position: relative;
+        font-family: 'Source Sans Pro';
     }
-    footer ul li:first-child,
-    footer ul li:last-child {
-        display: table-cell;
-        padding: 0;
+    footer ul li:before {
+        content:"";
+        height: 1px;
+        width: 100px;
+        background: transparent;
+        border-top: 1px dotted #ddd;
+        display: block;
+        margin: 0 auto 15px;
     }
-
+    footer ul li:last-child:after {
+        display: none;
+    }
     footer p {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 
     input {
-        border: 1px solid #ddd;
+        border: 1px solid #ccc;
         padding: 4px 5px 5px;
         width: 100px;
     }
@@ -188,17 +206,26 @@
             </ul>
         </nav>
 
-        <img src="Joker-card.png" alt="">
-        <p>An Honest Liar tells the incredible story of famed magician, skeptic and enemy of deception, James “The Amazing” Randi.  The film brings to life his carefully-designed projects that publicly exposed psychics, faith healers and con artists with quasi-religious fervor. Today, Randi himself faces the price of a deception that might result in the loss of his partner of 26 years.</p>
-    </header>
-    <footer>
+<!-- <img src="Joker-card.png" alt="">
+    <p>An Honest Liar tells the incredible story of famed magician, skeptic and enemy of deception, James “The Amazing” Randi.  The film brings to life his carefully-designed projects that publicly exposed psychics, faith healers and con artists with quasi-religious fervor. Today, Randi himself faces the price of a deception that might result in the loss of his partner of 26 years.</p>
+ -->
+
+     </header>
+
+
+          <h3>The Filmmakers</h3>
+
+<p style="text-align:left">Justin Weinstein has been making documentaries for broadcast, theatrical release, and commercial clients for over 10 years.  Most recently, he wrote and edited Being Elmo; A Puppeteers Journey, which won the Special Jury Prize at the Sundance Film Festival in 2011, and for which Weinstein and fellow writer/editor Philip Shane were nominated for The Humanitas Prize which honors "film & television writers whose work explores the human condition in a nuanced, meaningful way." Prior to that, Weinstein produced Face Off at Coal River Mountain for Al Jazeera English, and Dirty Business, produced in collaboration with Alex Gibney. Earlier, Weinstein produced numerous projects for ABC News, Peter Jennings Reporting, and PBS, including Hot Politics for Frontline and the ABC special, Last Days on Earth.  He resides in Brooklyn, where it seems like everyone and their dog is a documentary filmmaker.
+</p>
+
+            <footer>
         <ul>
             <li>
-                <p>Help us bring James Randi’s story to the screen and get cool rewards.</p>
+                <p>Help us bring James Randi’s story<br />to the screen and get cool rewards.</p>
                 <button class="button">Contribute</button>
             </li>
             <li>
-                <p>Subscribe to our mailing list for news and updates about the film.</p>
+                <p>Subscribe to our mailing list for<br />news and updates about the film.</p>
                 <form action="">
                     <input type="text">
                     <button class="button">Submit</button>
