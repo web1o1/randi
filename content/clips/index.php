@@ -2,12 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Randi</title>
+    <title>Clips</title>
 </head>
 <body>
-home
-
-<a href="/clips/">clips</a>
-
+clips
 </body>
 </html>
