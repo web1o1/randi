@@ -1,0 +1,28 @@
+%fence {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main {
+    margin-bottom: 50px;
+    @extend %fence;
+}
+
+.media {
+    @include pie-clearfix;
+    margin-bottom: 30px;
+
+    img {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+    }
+    .data {
+        overflow: hidden;
+        @include respond-to(narrow) {
+            overflow: visible;
+        }
+    }
+}

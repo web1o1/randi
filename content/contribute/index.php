@@ -1,6 +1,6 @@
-<?php $page_title = 'Clips' ?>
+<?php $page_title = 'Contribute' ?>
 <?php include '../../partials/header.php' ?>
 
-<h1>Clips</h1>
+contribute
 
 <?php include '../../partials/footer.php' ?>

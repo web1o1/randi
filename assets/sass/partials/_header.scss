@@ -1,0 +1,72 @@
+#header {
+    padding-top: 130px;
+    margin-bottom: 100px;
+    background: url(/assets/i/joker-down.png) no-repeat center top;
+
+    @include respond-to(narrow) {
+        margin-bottom: 50px;
+    }
+
+    .title, .tagline {
+        text-align: center;
+        font: 35px/.9 $font-slab;
+        letter-spacing: 1px;
+        margin: 0 0 10px;
+        text-transform: uppercase;
+
+        @include respond-to(narrow) {
+            font-size: 24px;
+        }
+    }
+
+    .tagline {
+        font: 16px/1 $font-slab;
+        text-transform: uppercase;
+        margin: 0;
+        color: #999;
+
+        span {
+            color: $color-accent;
+        }
+
+        @include respond-to(narrow) {
+            font-size: 13px;
+        }
+    }
+}
+
+#nav {
+    text-align: center;
+    margin-top: 30px;
+
+    li {
+        display: inline-block;
+        border-left: 1px solid #eee;
+        font-size: 0;
+        @include respond-to(narrow) {
+            display: block;
+            border: none;
+            border-top: 1px solid #eee;
+        }
+    }
+    li:first-child {
+        border-left: none;
+    }
+    a {
+        color: #222;
+        padding: 0 9px 0 10px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.3;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: $font-sans;
+        display: block;
+        color: #999;
+        font-weight: 600;
+
+        @include respond-to(narrow) {
+            padding: 5px 0 6px;
+        }
+    }
+}

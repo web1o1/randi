@@ -1,0 +1,11 @@
+h1, h2, h3 {
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font: 22px/1.2 $font-slab;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}

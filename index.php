@@ -1,13 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Randi</title>
-</head>
-<body>
+<?php include 'partials/header.php' ?>
+
 home
 
-<a href="/clips/">clips</a>
-
-</body>
-</html>
+<?php include 'partials/footer.php' ?>

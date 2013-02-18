@@ -1,0 +1,248 @@
+/* line 17, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, /Library/WebServer/Documents/randi/assets/sass/partials/_layout.scss */
+#main, #footer {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 7, /Library/WebServer/Documents/randi/assets/sass/partials/_layout.scss */
+#main {
+  margin-bottom: 50px;
+}
+
+/* line 12, /Library/WebServer/Documents/randi/assets/sass/partials/_layout.scss */
+.media {
+  *zoom: 1;
+  margin-bottom: 30px;
+}
+/* line 38, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.media:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 16, /Library/WebServer/Documents/randi/assets/sass/partials/_layout.scss */
+.media img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+/* line 22, /Library/WebServer/Documents/randi/assets/sass/partials/_layout.scss */
+.media .data {
+  overflow: hidden;
+}
+@media only screen and (max-width: 700px) {
+  /* line 22, /Library/WebServer/Documents/randi/assets/sass/partials/_layout.scss */
+  .media .data {
+    overflow: visible;
+  }
+}
+
+/* line 1, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
+html {
+  background: url(/assets/i/thunder-right.svg) no-repeat right top;
+}
+@media only screen and (max-width: 700px) {
+  /* line 1, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
+  html {
+    background-size: 70px auto;
+  }
+}
+
+/* line 9, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
+body {
+  font: 14px/1.5 "Georgia", "Times", serif;
+  color: #222;
+  padding-left: 5%;
+  padding-right: 5%;
+  background: url(/assets/i/thunder-left.svg) no-repeat;
+}
+@media only screen and (max-width: 700px) {
+  /* line 9, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
+  body {
+    background-size: 70px auto;
+  }
+}
+
+/* line 21, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 25, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
+p {
+  margin: 0 0 15px;
+}
+
+/* line 29, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
+i {
+  font-style: italic;
+}
+
+/* line 1, /Library/WebServer/Documents/randi/assets/sass/partials/_heading.scss */
+h1, h2, h3 {
+  text-rendering: optimizeLegibility;
+}
+
+/* line 5, /Library/WebServer/Documents/randi/assets/sass/partials/_heading.scss */
+h1 {
+  font: 22px/1.2 "Ultra", Helvetica, sans;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+/* line 1, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+#header {
+  padding-top: 130px;
+  margin-bottom: 100px;
+  background: url(/assets/i/joker-down.png) no-repeat center top;
+}
+@media only screen and (max-width: 700px) {
+  /* line 1, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  #header {
+    margin-bottom: 50px;
+  }
+}
+/* line 10, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+#header .title, #header .tagline {
+  text-align: center;
+  font: 35px/0.9 "Ultra", Helvetica, sans;
+  letter-spacing: 1px;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 700px) {
+  /* line 10, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  #header .title, #header .tagline {
+    font-size: 24px;
+  }
+}
+/* line 22, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+#header .tagline {
+  font: 16px/1 "Ultra", Helvetica, sans;
+  text-transform: uppercase;
+  margin: 0;
+  color: #999;
+}
+/* line 28, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+#header .tagline span {
+  color: #4c8694;
+}
+@media only screen and (max-width: 700px) {
+  /* line 22, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  #header .tagline {
+    font-size: 13px;
+  }
+}
+
+/* line 38, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+#nav {
+  text-align: center;
+  margin-top: 30px;
+}
+/* line 42, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+#nav li {
+  display: inline-block;
+  border-left: 1px solid #eee;
+  font-size: 0;
+}
+@media only screen and (max-width: 700px) {
+  /* line 42, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  #nav li {
+    display: block;
+    border: none;
+    border-top: 1px solid #eee;
+  }
+}
+/* line 52, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+#nav li:first-child {
+  border-left: none;
+}
+/* line 55, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+#nav a {
+  color: #222;
+  padding: 0 9px 0 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Source Sans Pro", Helvetica, sans;
+  display: block;
+  color: #999;
+  font-weight: 600;
+}
+@media only screen and (max-width: 700px) {
+  /* line 55, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  #nav a {
+    padding: 5px 0 6px;
+  }
+}
