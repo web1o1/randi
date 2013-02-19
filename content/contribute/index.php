@@ -1,5 +1,8 @@
-<?php $page_title = 'Contribute' ?>
-<?php include '../../partials/header.php' ?>
+<?php
+    $page_id = 'contribute';
+    $page_title = 'Contribute';
+    include '../../partials/header.php';
+?>
 
 contribute
 

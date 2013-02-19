@@ -1,5 +1,8 @@
-<?php $page_title = 'The Story' ?>
-<?php include '../../partials/header.php' ?>
+<?php
+    $page_id = 'story';
+    $page_title = 'The Story';
+    include '../../partials/header.php';
+?>
 
 <h1>The Story</h1>
 

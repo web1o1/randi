@@ -1,5 +1,8 @@
-<?php $page_title = 'Filmmakers' ?>
-<?php include '../../partials/header.php' ?>
+<?php
+    $page_id = 'filmmakers';
+    $page_title = 'Filmmakers';
+    include '../../partials/header.php';
+?>
 
 <h1>Filmmakers</h1>
 

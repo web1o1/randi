@@ -1,5 +1,8 @@
-<?php $page_title = 'Clips' ?>
-<?php include '../../partials/header.php' ?>
+<?php
+    $page_id = 'clips';
+    $page_title = 'Clips';
+    include '../../partials/header.php';
+?>
 
 <h1>Clips</h1>
 

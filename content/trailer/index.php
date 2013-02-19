@@ -1,5 +1,8 @@
-<?php $page_title = "Trailer" ?>
-<?php include '../../partials/header.php'; ?>
+<?php
+    $page_id = 'trailer';
+    $page_title = 'Trailer';
+    include '../../partials/header.php';
+?>
 
 trailer
 

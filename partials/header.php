@@ -8,19 +8,19 @@
     <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
-<body>
+<body<?php if (isset($page_id)) { echo ' id="'. $page_id . '"'; } ?>>
 
     <div id="header">
         <div class="title">An Honest Liar</div>
         <div class="tagline">The <span>Amazing Randi</span> Story</div>
         <ul id="nav">
             <li><a href="/">home</a></li>
-            <li><a href="/clips/">clips</a></li>
             <li><a href="/contribute/">contribute</a></li>
-            <li><a href="/filmmakers/">filmmakers</a></li>
-            <li><a href="/photos/">photos</a></li>
-            <li><a href="/story/">story</a></li>
             <li><a href="/trailer/">trailer</a></li>
+            <li><a href="/story/">story</a></li>
+            <li><a href="/photos/">photos</a></li>
+            <li><a href="/clips/">clips</a></li>
+            <li><a href="/filmmakers/">filmmakers</a></li>
         </ul>
     </div>
     <div id="main">

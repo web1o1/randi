@@ -1,5 +1,8 @@
-<?php $page_title = 'Photos' ?>
-<?php include '../../partials/header.php' ?>
+<?php
+    $page_id = 'photos';
+    $page_title = 'Photos';
+    include '../../partials/header.php';
+?>
 
 photos
 
