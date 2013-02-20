@@ -294,7 +294,7 @@ h1 {
   font: 10px/1 "Source Sans Pro", Helvetica, sans;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin-bottom: 13px;
   color: #666;
 }
@@ -334,7 +334,7 @@ h1 {
 /* line 48, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #nav {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 /* line 52, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #nav li {
