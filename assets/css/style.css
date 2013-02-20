@@ -91,14 +91,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
-  border: 1px solid #ddd;
 }
-/* line 22, /Library/WebServer/Documents/randi/assets/sass/partials/_layout.scss */
+/* line 21, /Library/WebServer/Documents/randi/assets/sass/partials/_layout.scss */
 .media .data {
   overflow: hidden;
 }
 @media only screen and (max-width: 700px) {
-  /* line 22, /Library/WebServer/Documents/randi/assets/sass/partials/_layout.scss */
+  /* line 21, /Library/WebServer/Documents/randi/assets/sass/partials/_layout.scss */
   .media .data {
     overflow: visible;
   }
@@ -106,7 +105,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 1, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
 html {
-  background: url(/assets/i/thunder-right.svg) no-repeat right top;
+  background: #111111 url(/assets/i/thunder-right.svg) no-repeat right top;
 }
 @media only screen and (max-width: 700px) {
   /* line 1, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
@@ -118,7 +117,7 @@ html {
 /* line 9, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
 body {
   font: 14px/1.5 "Georgia", "Times", serif;
-  color: #222;
+  color: #ddd;
   padding-left: 5%;
   padding-right: 5%;
   background: url(/assets/i/thunder-left.svg) no-repeat;
@@ -157,6 +156,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 50px;
+  color: #eee;
 }
 
 /* line 1, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
@@ -178,6 +178,7 @@ h1 {
   letter-spacing: 1px;
   margin: 0 0 10px;
   text-transform: uppercase;
+  color: #eee;
 }
 @media only screen and (max-width: 700px) {
   /* line 10, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
@@ -185,48 +186,48 @@ h1 {
     font-size: 24px;
   }
 }
-/* line 22, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 23, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #header .tagline {
   font: 16px/1 "Ultra", Helvetica, sans;
   text-transform: uppercase;
   margin: 0;
   color: #999;
 }
-/* line 28, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 29, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #header .tagline span {
   color: #4c8694;
 }
 @media only screen and (max-width: 700px) {
-  /* line 22, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  /* line 23, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
   #header .tagline {
     font-size: 13px;
   }
 }
 
-/* line 38, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 39, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #nav {
   text-align: center;
   margin-top: 30px;
 }
-/* line 42, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 43, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #nav li {
   display: inline-block;
-  border-left: 1px solid #eee;
+  border-left: 1px solid #333;
   font-size: 0;
 }
 @media only screen and (max-width: 700px) {
-  /* line 42, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  /* line 43, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
   #nav li {
     display: block;
     border: none;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #333;
   }
 }
-/* line 52, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 53, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #nav li:first-child {
   border-left: none;
 }
-/* line 55, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 56, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #nav a {
   color: #222;
   padding: 0 9px 0 10px;
@@ -241,7 +242,7 @@ h1 {
   font-weight: 600;
 }
 @media only screen and (max-width: 700px) {
-  /* line 55, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  /* line 56, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
   #nav a {
     padding: 5px 0 6px;
   }

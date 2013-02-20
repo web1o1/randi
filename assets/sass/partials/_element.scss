@@ -1,5 +1,5 @@
 html {
-    background: url(/assets/i/thunder-right.svg) no-repeat right top;
+    background: #111 url(/assets/i/thunder-right.svg) no-repeat right top;
 
     @include respond-to(narrow) {
         background-size: 70px auto;
@@ -8,7 +8,7 @@ html {
 
 body {
     font: 14px/1.5 $font-serif;
-    color: #222;
+    color: #ddd;
     padding-left: 5%;
     padding-right: 5%;
     background: url(/assets/i/thunder-left.svg) no-repeat;

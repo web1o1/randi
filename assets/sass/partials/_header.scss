@@ -13,6 +13,7 @@
         letter-spacing: 1px;
         margin: 0 0 10px;
         text-transform: uppercase;
+        color: #eee;
 
         @include respond-to(narrow) {
             font-size: 24px;
@@ -41,12 +42,12 @@
 
     li {
         display: inline-block;
-        border-left: 1px solid #eee;
+        border-left: 1px solid #333;
         font-size: 0;
         @include respond-to(narrow) {
             display: block;
             border: none;
-            border-top: 1px solid #eee;
+            border-top: 1px solid #333;
         }
     }
     li:first-child {
