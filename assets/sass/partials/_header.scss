@@ -7,13 +7,22 @@
         margin-bottom: 50px;
     }
 
+    .credit {
+        font: 10px/1 $font-sans;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+        margin-bottom: 13px;
+        color: #666;
+    }
+
     .title, .tagline {
         text-align: center;
         font: 35px/.9 $font-slab;
         letter-spacing: 1px;
         margin: 0 0 10px;
         text-transform: uppercase;
-        color: #eee;
+        color: #e5e5e5;
 
         @include respond-to(narrow) {
             font-size: 24px;
@@ -42,19 +51,17 @@
 
     li {
         display: inline-block;
-        border-left: 1px solid #333;
         font-size: 0;
         @include respond-to(narrow) {
             display: block;
             border: none;
-            border-top: 1px solid #333;
+            border-top: 1px solid #151515;
         }
     }
     li:first-child {
         border-left: none;
     }
     a {
-        color: #222;
         padding: 0 9px 0 10px;
         text-align: center;
         font-size: 14px;
@@ -66,8 +73,24 @@
         color: #999;
         font-weight: 600;
 
+        &:hover {
+            color: #ce5b46;
+        }
+
         @include respond-to(narrow) {
             padding: 5px 0 6px;
         }
+
+        #home &[href="/"],
+        #filmmakers &[href="/filmmakers/"],
+        #contribute &[href="/contribute/"],
+        #trailer &[href="/trailer/"],
+        #story &[href="/story/"],
+        #photos &[href="/photos/"],
+        #clips &[href="/clips/"] {
+            color: #ce5b46;
+        }
     }
+
+
 }

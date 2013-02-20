@@ -1,3 +1,62 @@
 #footer {
     @extend %fence;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 12px;
+    padding-bottom: 80px;
+
+    ul {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    ul li {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 23px;
+        position: relative;
+        font-family: $font-sans;
+    }
+
+    ul li:before {
+        content:"";
+        height: 1px;
+        width: 50px;
+        background: transparent;
+        border-top: 1px dotted #333;
+        display: block;
+        margin: 0 auto 18px;
+    }
+
+    ul li:last-child:after {
+        display: none;
+    }
+
+    p, label {
+        margin-bottom: 10px;
+    }
+
+    label {
+        display: block;
+    }
+
+    input[type="email"] {
+        border: 1px solid #ccc;
+        padding: 4px 5px 5px;
+        width: 100px;
+        margin-right: 5px;
+        font-family: $font-sans;
+        border-radius: 2px;
+    }
+
+    .icon {
+        font-size: 20px;
+        color: #666;
+        margin: 0 3px;
+
+        &:hover {
+            color: $color-link;
+        }
+    }
 }
+

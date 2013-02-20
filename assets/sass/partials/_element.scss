@@ -1,5 +1,5 @@
 html {
-    background: #111 url(/assets/i/thunder-right.svg) no-repeat right top;
+    background: #050505 url(/assets/i/thunder-right.svg) no-repeat right top;
 
     @include respond-to(narrow) {
         background-size: 70px auto;
@@ -8,7 +8,7 @@ html {
 
 body {
     font: 14px/1.5 $font-serif;
-    color: #ddd;
+    color: #ccc;
     padding-left: 5%;
     padding-right: 5%;
     background: url(/assets/i/thunder-left.svg) no-repeat;
@@ -28,4 +28,45 @@ p {
 
 i {
     font-style: italic;
+}
+
+.button {
+    padding: 0 10px 1px;
+    background: $color-link;
+    color: #fff;
+    border-radius: 2px;
+    text-decoration: none;
+    font: 11px/2.2 $font-sans;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    display: inline-block;
+
+    &:hover {
+        background: darken($color-link, 15%);
+    }
+    &:active {
+        background: darken($color-link, 25%);
+    }
+}
+
+figure {
+    margin-bottom: 30px;
+
+    img {
+        width: 100%;
+    }
+
+    figcaption {
+        p {
+            margin-bottom: 0
+        }
+        .credit {
+            font: 11px $font-sans;
+            color: #666;
+        }
+    }
 }

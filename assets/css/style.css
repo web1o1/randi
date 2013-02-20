@@ -63,6 +63,81 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/*  Font Awesome 3.0
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    • The Font Awesome font is licensed under the SIL Open Font License - http://scripts.sil.org/OFL
+    • Font Awesome CSS, LESS, and SASS files are licensed under the MIT License -
+      http://opensource.org/licenses/mit-license.html
+    • The Font Awesome pictograms are licensed under the CC BY 3.0 License - http://creativecommons.org/licenses/by/3.0/
+    • Attribution is no longer required in Font Awesome 3.0, but much appreciated:
+      "Font Awesome by Dave Gandy - http://fortawesome.github.com/Font-Awesome"
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: Lead Product Designer @ http://kyruus.com
+
+    */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("/assets/font/fontawesome/fontawesome-webfont.eot");
+  src: url("/assets/font/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/font/fontawesome/fontawesome-webfont.woff") format("woff"), url("/assets/font/fontawesome/fontawesome-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+/* includes sprites.less reset */
+/* line 40, /Library/WebServer/Documents/randi/assets/sass/partials/_fontawesome.scss */
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none !important;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+}
+
+/* line 56, /Library/WebServer/Documents/randi/assets/sass/partials/_fontawesome.scss */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+
+/* makes sure icons active on rollover in links */
+/* line 65, /Library/WebServer/Documents/randi/assets/sass/partials/_fontawesome.scss */
+a [class^="icon-"],
+a [class*=" icon-"] {
+  display: inline-block;
+}
+
+/* line 70, /Library/WebServer/Documents/randi/assets/sass/partials/_fontawesome.scss */
+.icon-facebook-sign:before {
+  content: "\f021";
+}
+
+/* line 71, /Library/WebServer/Documents/randi/assets/sass/partials/_fontawesome.scss */
+.icon-twitter:before {
+  content: "\f022";
+}
+
 /* line 1, /Library/WebServer/Documents/randi/assets/sass/partials/_layout.scss */
 #main, #footer {
   max-width: 500px;
@@ -105,7 +180,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 1, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
 html {
-  background: #111111 url(/assets/i/thunder-right.svg) no-repeat right top;
+  background: #050505 url(/assets/i/thunder-right.svg) no-repeat right top;
 }
 @media only screen and (max-width: 700px) {
   /* line 1, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
@@ -117,7 +192,7 @@ html {
 /* line 9, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
 body {
   font: 14px/1.5 "Georgia", "Times", serif;
-  color: #ddd;
+  color: #ccc;
   padding-left: 5%;
   padding-right: 5%;
   background: url(/assets/i/thunder-left.svg) no-repeat;
@@ -144,6 +219,49 @@ i {
   font-style: italic;
 }
 
+/* line 33, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
+.button {
+  padding: 0 10px 1px;
+  background: #e54d28;
+  color: #fff;
+  border-radius: 2px;
+  text-decoration: none;
+  font: 11px/2.2 "Source Sans Pro", Helvetica, sans;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  display: inline-block;
+}
+/* line 48, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
+.button:hover {
+  background: #ac3215;
+}
+/* line 51, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
+.button:active {
+  background: #7e250f;
+}
+
+/* line 56, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
+figure {
+  margin-bottom: 30px;
+}
+/* line 59, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
+figure img {
+  width: 100%;
+}
+/* line 64, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
+figure figcaption p {
+  margin-bottom: 0;
+}
+/* line 67, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
+figure figcaption .credit {
+  font: 11px "Source Sans Pro", Helvetica, sans;
+  color: #666;
+}
+
 /* line 1, /Library/WebServer/Documents/randi/assets/sass/partials/_heading.scss */
 h1, h2, h3 {
   text-rendering: optimizeLegibility;
@@ -156,7 +274,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 50px;
-  color: #eee;
+  color: #d5d5d5;
 }
 
 /* line 1, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
@@ -172,64 +290,71 @@ h1 {
   }
 }
 /* line 10, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+#header .credit {
+  font: 10px/1 "Source Sans Pro", Helvetica, sans;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 13px;
+  color: #666;
+}
+/* line 19, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #header .title, #header .tagline {
   text-align: center;
   font: 35px/0.9 "Ultra", Helvetica, sans;
   letter-spacing: 1px;
   margin: 0 0 10px;
   text-transform: uppercase;
-  color: #eee;
+  color: #e5e5e5;
 }
 @media only screen and (max-width: 700px) {
-  /* line 10, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  /* line 19, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
   #header .title, #header .tagline {
     font-size: 24px;
   }
 }
-/* line 23, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 32, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #header .tagline {
   font: 16px/1 "Ultra", Helvetica, sans;
   text-transform: uppercase;
   margin: 0;
   color: #999;
 }
-/* line 29, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 38, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #header .tagline span {
   color: #4c8694;
 }
 @media only screen and (max-width: 700px) {
-  /* line 23, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  /* line 32, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
   #header .tagline {
     font-size: 13px;
   }
 }
 
-/* line 39, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 48, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #nav {
   text-align: center;
   margin-top: 30px;
 }
-/* line 43, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 52, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #nav li {
   display: inline-block;
-  border-left: 1px solid #333;
   font-size: 0;
 }
 @media only screen and (max-width: 700px) {
-  /* line 43, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  /* line 52, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
   #nav li {
     display: block;
     border: none;
-    border-top: 1px solid #333;
+    border-top: 1px solid #151515;
   }
 }
-/* line 53, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 61, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #nav li:first-child {
   border-left: none;
 }
-/* line 56, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 64, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #nav a {
-  color: #222;
   padding: 0 9px 0 10px;
   text-align: center;
   font-size: 14px;
@@ -241,9 +366,79 @@ h1 {
   color: #999;
   font-weight: 600;
 }
+/* line 76, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+#nav a:hover {
+  color: #ce5b46;
+}
 @media only screen and (max-width: 700px) {
-  /* line 56, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  /* line 64, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
   #nav a {
     padding: 5px 0 6px;
   }
+}
+/* line 90, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+#home #nav a[href="/"], #filmmakers #nav a[href="/filmmakers/"], #contribute #nav a[href="/contribute/"], #trailer #nav a[href="/trailer/"], #story #nav a[href="/story/"], #photos #nav a[href="/photos/"], #clips #nav a[href="/clips/"] {
+  color: #ce5b46;
+}
+
+/* line 1, /Library/WebServer/Documents/randi/assets/sass/partials/_footer.scss */
+#footer {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 12px;
+  padding-bottom: 80px;
+}
+/* line 8, /Library/WebServer/Documents/randi/assets/sass/partials/_footer.scss */
+#footer ul {
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 13, /Library/WebServer/Documents/randi/assets/sass/partials/_footer.scss */
+#footer ul li {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 23px;
+  position: relative;
+  font-family: "Source Sans Pro", Helvetica, sans;
+}
+/* line 21, /Library/WebServer/Documents/randi/assets/sass/partials/_footer.scss */
+#footer ul li:before {
+  content: "";
+  height: 1px;
+  width: 50px;
+  background: transparent;
+  border-top: 1px dotted #333;
+  display: block;
+  margin: 0 auto 18px;
+}
+/* line 31, /Library/WebServer/Documents/randi/assets/sass/partials/_footer.scss */
+#footer ul li:last-child:after {
+  display: none;
+}
+/* line 35, /Library/WebServer/Documents/randi/assets/sass/partials/_footer.scss */
+#footer p, #footer label {
+  margin-bottom: 10px;
+}
+/* line 39, /Library/WebServer/Documents/randi/assets/sass/partials/_footer.scss */
+#footer label {
+  display: block;
+}
+/* line 43, /Library/WebServer/Documents/randi/assets/sass/partials/_footer.scss */
+#footer input[type="email"] {
+  border: 1px solid #ccc;
+  padding: 4px 5px 5px;
+  width: 100px;
+  margin-right: 5px;
+  font-family: "Source Sans Pro", Helvetica, sans;
+  border-radius: 2px;
+}
+/* line 52, /Library/WebServer/Documents/randi/assets/sass/partials/_footer.scss */
+#footer .icon {
+  font-size: 20px;
+  color: #666;
+  margin: 0 3px;
+}
+/* line 57, /Library/WebServer/Documents/randi/assets/sass/partials/_footer.scss */
+#footer .icon:hover {
+  color: #e54d28;
 }

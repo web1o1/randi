@@ -8,9 +8,10 @@
     <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
-<body<?php if (isset($page_id)) { echo ' id="'. $page_id . '"'; } ?>>
+<body<?php if (isset($page_id)) { echo ' id="'. $page_id . '"'; } else { echo ' id="home"';} ?>>
 
     <div id="header">
+        <div class="credit">A Film by Justin Weinstein &amp; Tyler Measom</div>
         <div class="title">An Honest Liar</div>
         <div class="tagline">The <span>Amazing Randi</span> Story</div>
         <ul id="nav">
