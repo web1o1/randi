@@ -4,6 +4,6 @@
     include '../../partials/header.php';
 ?>
 
-contribute
+<h1>Contribute</h1>
 
 <?php include '../../partials/footer.php' ?>

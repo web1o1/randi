@@ -191,7 +191,7 @@ html {
 
 /* line 9, /Library/WebServer/Documents/randi/assets/sass/partials/_element.scss */
 body {
-  font: 14px/1.5 "Georgia", "Times", serif;
+  font: 14px/1.6 "Georgia", "Times", serif;
   color: #ccc;
   padding-left: 5%;
   padding-right: 5%;
@@ -298,7 +298,13 @@ h1 {
   margin-bottom: 13px;
   color: #666;
 }
-/* line 19, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+@media only screen and (max-width: 700px) {
+  /* line 10, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  #header .credit {
+    letter-spacing: 1px;
+  }
+}
+/* line 22, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #header .title, #header .tagline {
   text-align: center;
   font: 35px/0.9 "Ultra", Helvetica, sans;
@@ -308,52 +314,52 @@ h1 {
   color: #e5e5e5;
 }
 @media only screen and (max-width: 700px) {
-  /* line 19, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  /* line 22, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
   #header .title, #header .tagline {
     font-size: 24px;
   }
 }
-/* line 32, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 35, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #header .tagline {
   font: 16px/1 "Ultra", Helvetica, sans;
   text-transform: uppercase;
   margin: 0;
   color: #999;
 }
-/* line 38, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 41, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #header .tagline span {
   color: #4c8694;
 }
 @media only screen and (max-width: 700px) {
-  /* line 32, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  /* line 35, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
   #header .tagline {
     font-size: 13px;
   }
 }
 
-/* line 48, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 51, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #nav {
   text-align: center;
   margin-top: 40px;
 }
-/* line 52, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 55, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #nav li {
   display: inline-block;
   font-size: 0;
 }
 @media only screen and (max-width: 700px) {
-  /* line 52, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  /* line 55, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
   #nav li {
     display: block;
     border: none;
     border-top: 1px solid #151515;
   }
 }
-/* line 61, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 64, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #nav li:first-child {
   border-left: none;
 }
-/* line 64, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 67, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #nav a {
   padding: 0 9px 0 10px;
   text-align: center;
@@ -366,17 +372,17 @@ h1 {
   color: #999;
   font-weight: 600;
 }
-/* line 76, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 79, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #nav a:hover {
   color: #ce5b46;
 }
 @media only screen and (max-width: 700px) {
-  /* line 64, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+  /* line 67, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
   #nav a {
     padding: 5px 0 6px;
   }
 }
-/* line 90, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
+/* line 93, /Library/WebServer/Documents/randi/assets/sass/partials/_header.scss */
 #home #nav a[href="/"], #filmmakers #nav a[href="/filmmakers/"], #contribute #nav a[href="/contribute/"], #trailer #nav a[href="/trailer/"], #story #nav a[href="/story/"], #photos #nav a[href="/photos/"], #clips #nav a[href="/clips/"] {
   color: #ce5b46;
 }
